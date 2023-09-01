@@ -69,8 +69,39 @@
   border-left: 1px solid #eff2f4;
   transition: ease-in-out .3s;
   cursor: pointer;
+  position: relative;
 }
 
 .container .row .col .toolbar .searchbox .btn:hover {
   color: #1d98fe;
+}
+
+.container .row .col .toolbar .btn .dropdown-menu {
+  position: absolute;
+  left: ;
+  top: 98px;
+  overflow: hidden;
+  border: 1px solid #eff2f4;
+  background: white;
+}
+
+.container .row .col .message-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.container .row .col .message-list .list-item {
+  border-bottom: 1px solid #eff2f4;
+  cursor: pointer;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.container .row .col .message-list .list-item:hover {
+  background: rgba(0,159,220,0.25);
+}
+
+.container .row .col .message-list .list-item:last-child {
+  border-bottom: none;
 }
